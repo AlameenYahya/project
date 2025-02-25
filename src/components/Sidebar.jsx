@@ -4,7 +4,7 @@ const Sidebar = () => {
       {/* Logo */}
       <div className="flex items-center gap-2 mb-8">
         <img src="https://via.placeholder.com/40" alt="LoadWise Logo" className="w-8 h-8" />
-        <span className="text-lg font-semibold text-gray-800">LoadWise</span>
+        <span className="text-lg font-semibold text-blue-800">LoadWise</span>
         <i className="fas fa-chevron-right text-gray-400"></i>
       </div>
 
