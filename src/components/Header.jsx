@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <i className="fas fa-bell text-gray-500"></i>
         <div className="flex items-center gap-2">
-          <img src="https://via.placeholder.com/40" alt="Profile" className="rounded-full w-8 h-8" />
+          <img src="https://placehold.co/40" alt="Profile" className="rounded-full w-8 h-8" />
           <div className="text-sm">
             <p className="font-medium">Abdullahi Garba</p>
             <p className="text-gray-400">Admin</p>

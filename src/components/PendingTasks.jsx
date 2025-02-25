@@ -1,9 +1,9 @@
 const tasks = [
-    { id: 1, name: "Sarah Kate", role: "General Manager", image: "https://via.placeholder.com/40" },
-    { id: 2, name: "Sarah Kate", role: "General Manager", image: "https://via.placeholder.com/40" },
-    { id: 3, name: "Sarah Kate", role: "General Manager", image: "https://via.placeholder.com/40" },
-    { id: 4, name: "Sarah Kate", role: "General Manager", image: "https://via.placeholder.com/40" },
-    { id: 5, name: "Sarah Kate", role: "General Manager", image: "https://via.placeholder.com/40" },
+    { id: 1, name: "Sarah Kate", role: "General Manager", image: "https://placehold.co/40" },
+    { id: 2, name: "Sarah Kate", role: "General Manager", image: "https://placehold.co/40" },
+    { id: 3, name: "Sarah Kate", role: "General Manager", image: "https://placehold.co/40" },
+    { id: 4, name: "Sarah Kate", role: "General Manager", image: "https://placehold.co/40" },
+    { id: 5, name: "Sarah Kate", role: "General Manager", image: "https://placehold.co/40" },
   ];
   
   const PendingTasks = () => {
