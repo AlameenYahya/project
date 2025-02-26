@@ -45,7 +45,7 @@ const ParcelList = () => {
   return (
     <div className="bg-white p-4 shadow rounded-lg border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-between items-center mb-4 ">
         <div>
           <h2 className="text-lg font-medium text-gray-600">Parcels</h2>
           <p className="text-gray-400 text-sm">List of all parcels with their details.</p>
@@ -83,7 +83,7 @@ const ParcelList = () => {
                   <div className="flex items-center gap-1 truncate">
                     <i className="fas fa-user-circle text-gray-400 text-xl"></i>
                     <div className="truncate">
-                      <p className="font-medium text-gray-900 truncate">{parcel.name}</p>
+                      <p className="font-medium text-gray-600 truncate">{parcel.name}</p>
                       <p className="text-gray-400 text-sm truncate">{parcel.email}</p>
                     </div>
                   </div>

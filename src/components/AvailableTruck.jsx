@@ -15,7 +15,7 @@ const TruckAvailability = () => {
     className="bg-white p-4 shadow rounded-lg border border-gray-200 hover:scale-105">
       {/* Header */}
       <div className="flex justify-between items-center mb-2">
-        <h2 className="text-lg font-medium">Truck Availability</h2>
+        <h2 className="text-lg font-medium text-gray-600">Truck Availability</h2>
         <i className="fas fa-ellipsis-v text-gray-400"></i>
       </div>
       <p className="text-gray-400 text-sm mb-4">You will see the available trucks on ground.</p>

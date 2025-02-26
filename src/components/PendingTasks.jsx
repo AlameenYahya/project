@@ -15,7 +15,7 @@ const tasks = [
             <h3 className="text-lg font-medium text-gray-600">Pending Tasks</h3>
             <p className="text-gray-400 text-sm">List of all employees with their tasks.</p>
           </div>
-          <i className="fas fa-search text-gray-400 cursor-pointer"></i>
+          <i className="fas fa-search text-gray-400 cursor-pointer hover:scale-150"></i>
         </div>
   
         {/* Task List */}
@@ -23,13 +23,13 @@ const tasks = [
           {tasks.map((task) => (
             <div
               key={task.id}
-              className="flex justify-between bg-gray-100 items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer"
+              className="flex justify-between bg-gray-100 items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer hover:scale-95"
             >
               {/* User Info */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 hover:scale-90">
                 <img src={task.image} alt={task.name} className="w-8 h-8 rounded-full" />
                 <div>
-                  <p className="font-medium text-gray-900">{task.name} <span className="text-blue-500 text-sm">•</span></p>
+                  <p className="font-medium text-gray-600">{task.name} <span className="text-blue-500 text-sm">•</span></p>
                   <p className="text-gray-400 text-sm">{task.role}</p>
                 </div>
               </div>
