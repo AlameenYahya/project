@@ -1,5 +1,5 @@
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
-
+import {motion} from "framer-motion";
 const data = [
   { month: 'Jan', revenue1: 3000, revenue2: 2500 },
   { month: 'Feb', revenue1: 4500, revenue2: 3500 },
@@ -11,7 +11,11 @@ const data = [
 
 const RevenueCard = () => {
   return (
-    <div className="bg-white p-4 shadow rounded-lg border border-gray-200">
+    <motion.div
+    initial={{ opacity: 0, y: 20}}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, ease: "easeOut"}}
+    className="bg-white p-4 shadow rounded-lg border border-gray-200 hover:scale-105 ">
       {/* Header */}
       <div className="flex justify-between items-start mb-2">
         <div>
@@ -22,9 +26,17 @@ const RevenueCard = () => {
       </div>
 
       {/* Total Amount */}
-      <h3 className="text-3xl font-bold mb-4 text-gray-600">$30,492,000.00</h3>
+      <motion.h3
+      initial={{ scale: 0.8, opacity: 0}}
+      animate={{ scale: 1, opacity: 1}}
+      transition={{ duration: 0.6, delay: 0.3}}
+      className="text-3xl font-bold mb-4 text-gray-600">$30,492,000.00</motion.h3>
 
       {/* Line Chart */}
+      <motion.div
+      initial={{ opacity: 0, scale: 0.9}}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.4}} >
       <ResponsiveContainer width="90%" height={150}>
         <LineChart data={data}>
           <XAxis dataKey="month" tick={{ fontSize: 10, fill: '#9ca3af', margin:{ left: 5} }} axisLine={false} tickLine={false} />
@@ -43,7 +55,8 @@ const RevenueCard = () => {
           <Line type="monotone" dataKey="revenue2" stroke="#60a5fa" strokeWidth={2} dot={{ r: 4 }} />
         </LineChart>
       </ResponsiveContainer>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

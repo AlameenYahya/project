@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 const TruckAvailability = () => {
   // Truck availability percentages
   const totalTrucks = 54 + 32 + 5;
@@ -6,7 +8,11 @@ const TruckAvailability = () => {
   const faultyPercentage = (5 / totalTrucks) * 100;
 
   return (
-    <div className="bg-white p-4 shadow rounded-lg border border-gray-200">
+    <motion.div 
+    initial={{ opacity: 0, y: 20 }} 
+   animate={{ opacity: 1, y: 0 }} 
+   transition={{ duration: 0.6, ease: "easeOut" }}
+    className="bg-white p-4 shadow rounded-lg border border-gray-200 hover:scale-105">
       {/* Header */}
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-lg font-medium">Truck Availability</h2>
@@ -61,7 +67,7 @@ const TruckAvailability = () => {
           <span className="font-medium">5</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

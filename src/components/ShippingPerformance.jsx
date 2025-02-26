@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-
+import { motion } from 'framer-motion';
 const data = [
   { month: 'Jan', best: 42, average: 48, poor: 10 },
   { month: 'Feb', best: 40, average: 0, poor: 20 },
@@ -14,7 +14,11 @@ const data = [
 
 const ShippingPerformance = () => {
   return (
-    <div className="bg-white p-4 shadow rounded-lg border border-gray-200 text-sm">
+    <motion.div 
+    initial={{ opacity: 0, y: 20 }} 
+   animate={{ opacity: 1, y: 0 }} 
+   transition={{ duration: 0.8, ease: "easeOut" }}
+    className="bg-white p-4 shadow rounded-lg border border-gray-200 text-sm hover:scale-105">
       {/* Header */}
       <div className="flex justify-between items-start mb-2">
         <div>
@@ -72,7 +76,7 @@ const ShippingPerformance = () => {
         </BarChart>
         
       </ResponsiveContainer>
-    </div>
+    </motion.div>
   );
 };
 
