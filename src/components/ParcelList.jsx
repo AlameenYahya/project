@@ -97,7 +97,7 @@ const ParcelList = () => {
 
                 {/* Status */}
                 <span
-                  className={`px-3 py-1 gap-1 rounded-full text-xs font-medium text-white w-max truncate ${
+                  className={`hover:scale-95 px-3 py-1 gap-1 rounded-full text-xs font-medium text-white w-max truncate ${
                     parcel.status === "Delivered" ? "bg-green-500" : "bg-yellow-500"
                   }`}
                 >
